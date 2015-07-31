@@ -2,7 +2,7 @@
 
 Clonar este proyecto para tener una configuración inicial más avanzada.
 
-Things you may want to cover:
+Incluye:
 
 * Ruby 2.2.0
 
