@@ -24,7 +24,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 ####### ADDED #######
 gem 'pg'
-gem "twitter-bootstrap-rails"
 gem "awesome_print"
 gem 'jquery-turbolinks'
 gem 'jquery-ui-rails'
@@ -33,6 +32,8 @@ gem 'cancancan'
 gem 'rolify'
 gem 'dotenv-rails'
 gem 'simple_form'
+gem 'jquery-datatables-rails', '~> 3.3.0'
+gem 'will_paginate'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

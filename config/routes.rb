@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
+  
+  resources :users
+  devise_for :users, :path_prefix => 'my', :controllers => {:registrations => "registrations"}
   devise_scope :user do
       authenticated :user do
         root 'home#index', as: :authenticated_root

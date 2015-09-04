@@ -11,5 +11,19 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require dataTables/jquery.dataTables
  *= require_self
  */
+ body { padding-top: 90px; }
+/*BOOTSTRAP*/
+
+.navbar-brand {
+  padding: 15px 15px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background: #fff;
+}
+/**/
+.italic{
+   font-style: italic;
+}

@@ -1,0 +1,102 @@
+es:
+  date:
+    day_names: [Domingo, Lunes, Martes, Miércoles, Jueves, Viernes, Sábado]
+    abbr_day_names: [Dom, Lun, Mar, Mie, Jue, Vie, Sab]
+
+    # Don't forget the nil at the beginning; there's no such thing as a 0th month
+    month_names: [~, Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Octubre, Noviembre, Diciembre]
+    abbr_month_names: [~, Ene, Feb, Mar, Abr, May, Jun, Jul, Ago, Sep, Oct, Nov, Dic]
+    order:
+    - :day
+    - :month
+    - :year
+  helpers:
+    links:
+      edit: "Editar"
+      new: "Nuevo"
+    submit:
+      building:
+        create: "Agregar Nueva U. de Negocio"
+        submit: "Guardar U. de Negocio"
+        update: "Actualizar U. de Negocio"
+      category:
+        create: "Agregar Nuevo Rubro"
+        submit: "Guardar Rubro"
+        update: "Actualizar Rubro"
+      company:
+        create: "Agregar Nuevo Operador"
+        submit: "Guardar Operador"
+        update: "Actualizar Operador"
+      floor:
+        create: "Agregar Nuevo Piso"
+        submit: "Guardar Piso"
+        update: "Actualizar Piso"
+      income:
+        create: "Agregar Nuevo Ingreso"
+        submit: "Guardar Ingreso"
+        update: "Actualizar Ingreso"
+      location:
+        create: "Agregar Nueva Ubicación"
+        submit: "Guardar Ubicación"
+        update: "Actualizar Ubicación"
+      sale:
+        create: "Agregar Nueva Venta"
+        submit: "Guardar Venta"
+        update: "Actualizar Venta"
+      size:
+        create: "Agregar Nuevo Tamaño"
+        submit: "Guardar Tamaño"
+        update: "Actualizar Tamaño"
+      store:
+        create: "Agregar Nuevo Local"
+        submit: "Guardar Local"
+        update: "Actualizar Local"
+      subcategory:
+        create: "Agregar Nuevo Subrubro"
+        submit: "Guardar Subrubro"
+        update: "Actualizar Subrubro"
+      user:
+        create: "Agregar Nuevo Usuario"
+        submit: "Guardar Usuario"
+        update: "Actualizar Usuario"
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            reset_password_token:
+              invalid: "Token inválido"
+            current_password:
+              invalid: 'La contraseña es incorrecta.'
+            password_confirmation:
+              confirmation: 'Las contraseñas no coinciden.'
+            password:
+              too_short: 'La contraseña debe contener al menos 8 caracteres.'
+              blank: 'Ingrese la contraseña.'
+            email:
+              taken: 'E-mail ya se encuentra registrado, intente ingresar o recuperar contraseña.'
+              blank: 'E-mail no puede ser vacío.'
+            legal_id:
+              taken: 'RUT ya está usado.'
+        company:
+          attributes:
+            legal_id:
+              taken: 'El rut ya se encuentra registrado, intente ingresar o recuperar contraseña.'
+            name:
+              taken: 'El nombre ya se encuentra registrado, intente escoger otro.'
+        sale:
+          attributes:
+            invoices_count:
+              blank: No puede ser vacío.
+            receipts_count:
+              blank: No puede ser vacío.
+            amount:
+              blank: No puede ser vacío.
+            store_id:
+              taken: Esta tienda ingresó su venta para esta fecha. Si necesita puede editarla.
+  number:
+    human:
+      storage_units:
+        format: 'Error en el formato del archivo.'
+        units:
+          byte: 'Error en el tamaño del archivo.'

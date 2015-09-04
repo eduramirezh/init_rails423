@@ -1,0 +1,27 @@
+<h1>Usuarios Activos</h1>
+
+<table class="table table-striped default-datatable">
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th>Rol</th>
+      <th class="text-center">Activo</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.select { |user| user.active }.each do |user| %>
+      <tr>
+        <td><%= user.email %></td>
+        <td><%= user.roles.first.name %></td>
+        <td class="text-center"><%= user.active ? '<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>'.html_safe : '<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>'.html_safe %></td>
+        <td><%= link_to 'Ver', user, class: "btn btn-primary btn-xs" %> | <%= link_to 'Editar', edit_user_path(user),  class: "btn btn-warning btn-xs" %> | <%= link_to 'Eliminar', user, class: "btn btn-danger btn-xs", method: :delete, data: { confirm: 'Estas seguro de eliminar este Usuario?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Agregar Nuevo Usuario', new_user_path, class: "btn btn-success" %>
