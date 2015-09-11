@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  default_scope { includes(:roles) }
+
   def active_for_authentication?
     super && (self.active && self.roles.length > 0)
   end
