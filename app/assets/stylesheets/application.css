@@ -23,7 +23,24 @@
 .navbar-default .navbar-toggle .icon-bar {
   background: #fff;
 }
-/**/
-.italic{
-   font-style: italic;
-}
+/*GENERAL*/
+
+/*FONT*/
+.italic{font-style: italic;}
+
+/*Inputs*/
+.box {width: 100%;}
+.form-inputs span {display: block;}
+
+
+/*BTN*/
+.btn-full {width: 100%;}
+
+
+/*MARGENES*/
+.m-l-20 {margin-left: 20px;}
+.m-t-20 {margin-top: 20px;}
+.m-t-10 {margin-top: 10px;}
+
+/* LOG IN */
+.user_remember_me {margin-left: 20px;}
