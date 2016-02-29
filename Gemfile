@@ -24,7 +24,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 ####### ADDED #######
 gem 'pg'
-gem "awesome_print"
+gem 'awesome_print'
 gem 'jquery-turbolinks'
 gem 'jquery-ui-rails'
 gem 'devise'
